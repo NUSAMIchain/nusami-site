@@ -1,0 +1,16 @@
+/* NUSAMI root page (nusami.xyz) — static site served by Cloudflare Workers (assets in ./public).
+   Colors are the dark-theme values of the NUSAMI brand tokens; the font (JetBrains Mono, SIL OFL 1.1, fonts/) and the
+   mark are our own files — no CDN, no external requests. */
+@font-face { font-family: "JetBrains Mono"; font-weight: 400; font-display: swap; src: url("/fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 800; font-display: swap; src: url("/fonts/jetbrains-mono-latin-800-normal.woff2") format("woff2"); }
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; background: #0B0B0C; color: #FFFFFF; font-family: "JetBrains Mono", ui-monospace, monospace; }
+main { max-width: 640px; margin: 0 auto; padding: 18vh 16px 48px; display: flex; flex-direction: column; gap: 14px; }
+.mark { width: 56px; height: 56px; }
+.eyebrow { margin: 0; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; font-weight: 500; color: #D4F65C; }
+h1 { margin: 0; font-size: clamp(30px, 7vw, 48px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+.lead { margin: 0; font-size: 15px; line-height: 1.6; color: #A1A1A8; }
+.notice { margin: 8px 0 0; padding: 12px 14px; border-left: 3px solid #FF6B4A; background: #1A1210; font-size: 14px; line-height: 1.5; }
+.small { margin: 0; font-size: 12px; color: #A3A3AB; }
+a { color: #D4F65C; }
