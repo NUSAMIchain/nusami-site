@@ -1,9 +1,10 @@
 // Cloudflare Workers with static assets: the whole site is the files in ./public (no build step, no Worker code).
 // Deploy: Cloudflare builds this repository on push (Deploy command: npx wrangler deploy).
 // Local check: npx wrangler dev  (then open http://localhost:8787).
+// compatibility_date: a date every wrangler 4.x build knows; a static-assets site does not depend on it.
 {
   "name": "nusami-site",
-  "compatibility_date": "2026-11-18",
+  "compatibility_date": "2025-01-01",
   "assets": {
     "directory": "./public",
     // unknown paths get public/404.html with status 404 (instead of an empty 404)
