@@ -10,4 +10,4 @@ No build step. Cloudflare deploys on push with `npx wrangler deploy`.
 Check locally (Node.js 18+): `npx wrangler dev`, open http://localhost:8787 — the page, a 404 page for `/nope`, and the
 headers from `_headers` (`curl -I http://localhost:8787/`).
 
-Test network. Tokens have no value. You can lose all funds. This is not advice.
+Test network. Not open yet.
